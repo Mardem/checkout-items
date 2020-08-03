@@ -1,0 +1,1 @@
+"use strict";function test(e){return"heloo"}Object.defineProperty(exports,"__esModule",{value:!0}),exports.test=test;

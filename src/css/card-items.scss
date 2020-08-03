@@ -1,0 +1,90 @@
+$bg-btn-actions: #083f65;
+$bg-btn-actions-selected: #a9990e;
+$bg-card-selected: #ecd400;
+$bg-card: #0060a1;
+$dark-yellow: #5f5502;
+$bg-blue: #055b94;
+
+.custom-bar {
+  border-radius: 8px;
+  box-shadow: #8a8a8a 0 0 10px;
+  border-bottom: 4px solid #0060a1;
+}
+
+.custom-card-selected {
+  background: $bg-card-selected !important;
+  .row {
+    .item-description {
+      color: #8a7c01;
+    }
+    .title-item {
+      color: $dark-yellow;
+    }
+  }
+  .row.border-card {
+    border-top: 1.5px solid #d8c307;
+    color: $dark-yellow;
+
+    .minus {
+      &:hover {
+        color: white;
+        background-color: $bg-btn-actions-selected;
+      }
+    }
+    .plus {
+      &:hover {
+        color: white;
+        background-color: $bg-btn-actions-selected;
+      }
+    }
+  }
+}
+.border-card {
+  border-top: 1.5px solid $bg-blue;
+}
+
+.custom-card {
+  user-select: none;
+  border: none;
+  box-shadow: 0 0 13px 4px #e5f0f3;
+  border-radius: 5px;
+  background: $bg-card;
+  color: #fff;
+  transition: all 0.2s ease-in;
+  &:hover {
+    cursor: pointer;
+    background: #004b8b;
+  }
+}
+
+.item-description {
+  color: #7fafd0;
+}
+
+.item-more {
+  &:hover {
+    background: $bg-blue;
+  }
+  border-top: 1.5px solid $bg-blue;
+  transition: all 0s ease-in;
+  border-radius: 0 0 5px 5px;
+  background: #0468ab;
+  padding: 10px;
+}
+
+.btns {
+  padding: 10px;
+  transition: all 0.2s ease-in;
+  &.minus {
+    border-radius: 0 0 0 4px;
+    &:hover {
+      background-color: $bg-btn-actions;
+    }
+  }
+  &.plus {
+    &:hover {
+      background-color: $bg-btn-actions;
+    }
+    border-radius: 0 0 4px 0;
+  }
+}
